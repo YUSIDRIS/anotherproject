@@ -20,14 +20,14 @@ jobs:
                 --region us-west-2
   
   configure_infrastructure: 
-      docker:
-        - image: python:3.7-alpine3.11
-      steps:
-        - checkout
-        - add_ssh_keys:
+    docker:
+      - image: python:3.7-alpine3.11
+    steps:
+      - checkout
+      - add_ssh_keys:
             # You can get this ID in the section where you registered the SSH Key
-            fingerprints: ["b4:32:8e:4d:69:a5:ad:ca:5a:8d:02:c1:f7:9b:5a:e9"] 
-       - run:
+          fingerprints: ["b4:32:8e:4d:69:a5:ad:ca:5a:8d:02:c1:f7:9b:5a:e9"] 
+      - run:
           name: Install Ansible
           command: |
             apk add --update ansible
