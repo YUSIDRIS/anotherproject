@@ -7,7 +7,7 @@
   
 - name: "install index page"
   copy:
-    src: C:/Users/YUSUF_IDRIS/Desktop/anotherproject/roles/setup/files/index.html
+    src: C:\Users\YUSUF_IDRIS\Desktop\anotherproject\roles\setup\files\index.html
     dest: /var/www/html/index.html
     backup: yes
     
